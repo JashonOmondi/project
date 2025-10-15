@@ -19,9 +19,12 @@
         <div>
           <div style="font-weight:700">Legacy Web Agencies</div>
           <div class="muted" style="font-size:13px">Student Finance & Web Solutions</div>
+           <div class="menu-toggle" id="menu-toggle">
+        ☰
+      </div>
         </div>
       </div>
-      <nav>
+      <nav id="nav-menu">
         <ul>
           <li><a href="#services">Services</a></li>
           <li><a href="#about">About Us</a></li>
@@ -36,6 +39,14 @@
       </div>
     </div>
   </header>
+  <script>
+    const menuToggle = document.getElementById('menu-toggle');
+    const navMenu = document.getElementById('nav-menu');
+
+    menuToggle.addEventListener('click', () => {
+      navMenu.classList.toggle('active');
+    });
+  </script>
 
   <main class="container">
     <section class="hero">

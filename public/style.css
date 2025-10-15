@@ -40,26 +40,81 @@
 
   }
 
-.nav {
-    position: fixed;
-    top: 0px;           
-    width: 100%; 
+header{
+    position: sticky;
+    top: 0px;            
     background-color: white; 
     z-index: 1000; 
  }
-
-
-    ::placeholder{
-      color: skyblue;
-    }
-
-    .nav a {
-    display: inline-block;
-    color: var(--blue);
-    text-align: center;
-    padding: 14px 5px;
-    text-decoration: none;
+.nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 25px;
 }
+
+.menu-toggle {
+  display: none;
+  font-size: 20px;
+  cursor: pointer;
+  color: green;
+  border-radius: 10px;
+  text-align: end;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: rgb(61, 150, 186);
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  nav ul {
+    display: none;
+    flex-direction: column;
+    background: white;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    padding: 15px 0;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  }
+
+  nav ul.active,
+  nav.active ul {
+    display: flex;
+  }
+
+  nav.active ul li {
+    text-align: center;
+    padding: 10px 0;
+  }
+}
+
+/* Button styling */
+.pill {
+  background: dodgerblue;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 25px;
+  text-decoration: none;
+}
+
+
+
+
+
       
    
    
@@ -77,27 +132,17 @@
       .hero{grid-template-columns:1fr;}
       .services{grid-template-columns:repeat(2,1fr)}
       .portfolio-grid{grid-template-columns:repeat(2,1fr)}
+      .services{
+        display: flex;
+        flex-direction: column;
+      }
     }
-    @media (max-width:520px){
-      header .nav{flex-direction:column;align-items:stretch;gap:12px}
-      nav ul{flex-wrap:wrap}
-      .services{grid-template-columns:1fr}
-      .portfolio-grid{grid-template-columns:1fr}
-      .logo{width:44px;height:44px}
-      .hero h1{font-size:26px}
-    }
+ 
+  
     /* simple form styles */
     .form-row{display:flex;gap:12px}
     .form-row input,.form-row textarea{flex:1;padding:10px;border:1px solid #e6eef7;border-radius:8px}
     .muted{color:var(--muted);font-size:14px}
     .pill{display:inline-block;padding:6px 10px;border-radius:999px;background:#eef8ff;color:var(--blue);font-weight:600}
 
-    #about{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        
-        
-    }
     
