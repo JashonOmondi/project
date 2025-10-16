@@ -34,11 +34,9 @@
     padding: 2px;
     border-radius: 20px;
     position: relative;
-    left: auto;
-   
-    
-
+    left: auto;  
   }
+
 
 header{
     position: sticky;
@@ -110,15 +108,25 @@ nav ul li a {
   border-radius: 25px;
   text-decoration: none;
 }
+.contact{
+  display: grid;
+  grid-template-columns: repeat(6,0.5fr);
+  grid-template-rows: repeat();
+  gap: 5px;
+  padding-right: 5px;
+  justify-content: center;
+  align-items: center;
+}
+
+@media(max-width: 300px){
+  .contact{
+    display: flex;
+    flex-direction: column;
+  }
+}
 
 
-
-
-
-      
-   
-   
-    /* responsive */
+  /* responsive */
     @media(max-width: 1000px){
       #blog{
         display: flex;
