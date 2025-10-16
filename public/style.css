@@ -134,16 +134,28 @@ nav ul li a {
         gap: 12px
       }
     }
-
-
-    @media (max-width:1000px){
-      .hero{grid-template-columns:1fr;}
-      .services{grid-template-columns:repeat(2,1fr)}
-      .portfolio-grid{grid-template-columns:repeat(2,1fr)}
+    @media(max-width:600px){
+      .portfolio-grid{
+        display: flex;
+        flex-direction: column;
+      }
       .services{
         display: flex;
         flex-direction: column;
       }
+      .testimonial{
+        display: flex;
+        flex-direction: column;
+      }
+    }
+
+
+
+
+    @media (max-width:1000px){
+      .hero{grid-template-columns:1fr;}
+      .services{grid-template-columns:repeat(3,1fr)}
+      .portfolio-grid{grid-template-columns:repeat(3,0.5fr)}
     }
  
   
