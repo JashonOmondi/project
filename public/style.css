@@ -47,7 +47,9 @@
     font-weight: bold;
     color: #3A7D44;
   }
-
+button a{
+  color: white;
+}
 
 header{
     position: sticky;
