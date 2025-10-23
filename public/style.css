@@ -3,11 +3,8 @@
     body{font-family:Inter,ui-sans-serif,system-ui,Segoe UI,Roboto,"Helvetica Neue",Arial;line-height:1.5;margin:0;color:var(--dark);background:#dbe4ee}
     a{color:var(--blue);text-decoration:none}
     .container{max-width:1100px;margin:0 auto;padding:24px}
-    header{background:linear-gradient(90deg,#eaf6ff,white);border-bottom:1px solid #e6eef7}
-    .nav{display:flex;align-items:center;justify-content:space-between;padding: 18px;}
-    .brand{display:flex;gap:12px;align-items:center}
     .logo{width:56px;height:56px;border-radius:10px;background:var(--blue);display:flex;align-items:center;justify-content:center;color:white;font-weight:700}
-    nav ul{display:flex;gap:16px;list-style:none;margin:0;padding:0}
+   
     .btn-primary{background:var(--blue);color:white;padding:10px 16px;border-radius:8px;display:inline-block}
     .hero{display:grid;grid-template-columns:1fr 420px;gap:32px;align-items:center;padding:40px 0}
     .hero h1{font-size:34px;margin:0 0 12px}
@@ -30,6 +27,12 @@
       box-shadow:0 6px 18px rgba(50, 78, 130, 0.06);
       width: 100%
     }
+    .container{
+      padding-top: 30px;
+    }
+    .navbar{
+      scrollbar-width: thin;
+    }
   .Founder{
     padding: 2px;
     border-radius: 20px;
@@ -48,70 +51,20 @@
     color: #3A7D44;
   }
 button a{
-  color: white;
+  color: rgb(80, 78, 33);
 }
 
 header{
     position: sticky;
-    top: 0px;            
-    background-color: white; 
-    z-index: 1000; 
+    top: 0;            
+    background-color: rgb(181, 81, 81); 
+    z-index: 1000;
+    width: 100%; 
  }
-.nav{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 25px;
-}
 
-.menu-toggle {
-  display: none;
-  font-size: 20px;
-  cursor: pointer;
-  color: green;
-  border-radius: 10px;
-  text-align: end;
-}
 
-nav ul {
-  display: flex;
-  list-style: none;
-  gap: 20px;
-}
 
-nav ul li a {
-  text-decoration: none;
-  color: rgb(61, 150, 186);
-  font-weight: 500;
-}
 
-@media (max-width: 768px) {
-  .menu-toggle {
-    display: block;
-  }
-
-  nav ul {
-    display: none;
-    flex-direction: column;
-    background: white;
-    position: absolute;
-    top: 70px;
-    left: 0;
-    width: 100%;
-    padding: 15px 0;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-  }
-
-  nav ul.active,
-  nav.active ul {
-    display: flex;
-  }
-
-  nav.active ul li {
-    text-align: center;
-    padding: 10px 0;
-  }
-}
 
 /* Button styling */
 .pill {
@@ -138,8 +91,6 @@ nav ul li a {
   }
 }
 
-
-
   /* responsive */
     @media(max-width: 1000px){
       #blog{
@@ -163,16 +114,12 @@ nav ul li a {
       }
     }
 
-
-
-
     @media (max-width:1000px){
       .hero{grid-template-columns:1fr;}
       .services{grid-template-columns:repeat(3,1fr)}
       .portfolio-grid{grid-template-columns:repeat(3,0.5fr)}
     }
  
-  
     /* simple form styles */
     .form-row{display:flex;gap:12px}
     .form-row input,.form-row textarea{flex:1;padding:10px;border:1px solid #e6eef7;border-radius:8px}

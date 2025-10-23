@@ -12,33 +12,50 @@
 
 </head>
 <body>
-  <header>
-    <div class="nav">
-      <div class="brand">
-        <div class="logo"><img src="./Images/icon.png" alt="icon" height="56px"/></div>
-        <div>
-          <div style="font-weight:700">Legacy Web Agencies</div>
-          <div class="muted" style="font-size:13px">Student Finance & Web Solutions</div>
-           <div class="menu-toggle" id="menu-toggle">
-        ☰
-      </div>
-        </div>
-      </div>
-      <nav id="nav-menu">
-        <ul>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#about">About Us</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#Packages">Packages</a></li>
-          <li><a href="#blog">Blog</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-      <div class="flex">
-        <a class="pill" href="https://forms.gle/yJsNyY9mdpd89Jcq9">Get Quote</a>
-      </div>
+ <header>
+<nav class="navbar navbar-expand-sm bg-body-tertiary">
+  <div class="container-fluid">
+    
+    <div><img class="navbar-brand" src="./Images/icon.png" alt="icon"height= 56></div>
+     <div>
+    <div style="font-weight:700">Legacy Web Agencies</div>
+    <div class="muted" style="font-size:13px">Student Finance & Web Solutions</div>
     </div>
-  </header>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#about">About US</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#Packages">pricing</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#testimonials">Testimonials</a>
+        </li>
+         <li class="nav-item">
+          <a class="nav-link" href="#contact">Contact us</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Resources
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#services">Services</a></li>
+            <li><a class="dropdown-item" href="#portfolio">Portfolio</a></li>
+            <li><a class="dropdown-item" href="#blog">Blog</a></li>
+           
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</header>
+</nav>
   <script>
     const menuToggle = document.getElementById('menu-toggle');
     const navMenu = document.getElementById('nav-menu');
@@ -55,7 +72,7 @@
         <h1>Websites & Business Ideas that help Youths earn — fast.</h1>
         <p class="muted">I build simple, fast, and affordable websites for Youths, small businesses, and startup founders around Maseno. Also: finance tips, career guides and business ideas designed for youth.</p>
         <div style="display:flex;gap:12px;margin-top:12px">
-          <a class="btn-primary" href="#contact">Get a Quote</a>
+          <a class="btn-primary" href="https://forms.gle/yJsNyY9mdpd89Jcq9">Get a Quote</a>
           <a href="#portfolio" style="padding:10px 16px;border-radius:8px;background:transparent;border:1px solid #e6eef7">See Portfolio</a>
         </div>
 
@@ -268,8 +285,7 @@
           </div> 
         </div> 
      
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" 
-      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+      
     </section>
 
     <section id="contact" style="margin-top:36px;margin-bottom:24px">
@@ -302,9 +318,8 @@
         <div class="muted">Building websites & student ventures — Maseno, Kenya</div>
       </div>
        <div class="muted">© 2025 Legacy Web Agencies</div>
-
-
-     
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" 
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
     </div>
   </footer>
 
