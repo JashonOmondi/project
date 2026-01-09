@@ -88,7 +88,7 @@ span{
   gap: 15px;
 }
 
-@media(max-width: 300px){
+@media(max-width: 800px){
   .contact{
     display: flex;
     flex-direction: row;
@@ -96,7 +96,7 @@ span{
 }
 
   /* responsive */
-    @media(max-width: 1000px){
+    @media(max-width: 1100px){
       #blog{
         display: flex;
         flex-direction: column;
@@ -118,7 +118,7 @@ span{
       }
     }
 
-    @media (max-width:1000px){
+    @media (max-width: 1100px){
       .hero{grid-template-columns:1fr;}
       .services{grid-template-columns:repeat(3,1fr)}
       .portfolio-grid{grid-template-columns:repeat(3,0.5fr)}
